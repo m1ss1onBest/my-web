@@ -1,0 +1,22 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "A simple website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"sass --watch src/scss:public/styles\" \"nodemon server.js\"",
+    "start": "echo \"no start command specified\"",
+    "build": "sass src/scss:public/styles",
+    "test": "echo \"no test command specified\""
+  },
+  "author": "m1ss1onBest",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "path": "^0.12.7"
+  }
+}
