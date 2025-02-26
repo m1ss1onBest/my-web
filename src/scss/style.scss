@@ -9,7 +9,7 @@
 
     --font-weight-normal: 600;
 
-    --font-size-xl:  30px;
+    --font-size-xl: 30px;
     --font-size-xxl: 40px;
     --font-size-l: 25px;
 }
@@ -45,9 +45,12 @@ body {
 
             .nav-links {
                 display: flex;
+                align-items: center;
                 gap: 20px;
-                
+
+
                 a {
+                    display: flex;
                     padding: 5px;
                     text-decoration: none;
 
@@ -59,11 +62,25 @@ body {
                     transition: 0.3s ease-out;
                 }
 
+                #gh-link {
+                    border-radius: 50%;
+
+                    img {
+                        height: 35px;
+                        border-radius: 50%;
+                    }
+
+                    img:hover {
+                        filter: invert(1);
+                    }
+                }
+
                 a:hover {
                     border-color: var(--color-secondary);
                     background-color: var(--color-secondary);
                     color: var(--color-primary);
                 }
+
             }
         }
 
@@ -78,7 +95,7 @@ body {
                 align-self: center;
                 align-items: center;
             }
-            
+
             h2 {
                 font-size: var(--font-size-xxl);
                 margin: 0;
