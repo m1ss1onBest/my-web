@@ -25,7 +25,6 @@ body {
 }
 
 header {
-    // background-color: var(--color-primary);
     background: linear-gradient(45deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
     box-shadow: 0 5px 10px rgb(38, 38, 38);
     padding-bottom: 50px;
@@ -77,16 +76,15 @@ header {
             }
 
             #gh-link:hover {
+                background-color: var(--color-secondary);
+
                 img {
                     filter: invert(1);
                 }
             }
 
             a:hover {
-                // border-color: var(--color-secondary);
                 text-decoration: underline;
-                // background-color: var(--color-secondary);
-                // color: var(--color-primary);
             }
         }
 
@@ -123,7 +121,9 @@ header {
 
         p {
             color: white;
-        };
+        }
+
+        ;
     }
 }
 
