@@ -26,8 +26,9 @@ body {
 
 header {
     // background-color: var(--color-primary);
-    background: linear-gradient(var(--color-bg-gradient1), var(--color-bg-gradient2));
+    background: linear-gradient(45deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
     box-shadow: 0 5px 10px rgb(38, 38, 38);
+    padding-bottom: 50px;
 
     nav {
         padding-bottom: 15px;
@@ -87,8 +88,8 @@ header {
                 // background-color: var(--color-secondary);
                 // color: var(--color-primary);
             }
-
         }
+
     }
 
     .header-space {
@@ -110,6 +111,19 @@ header {
 
     .centered {
         text-align: center;
+    }
+
+    .vacant-places {
+        border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        color: white;
+        padding: 10px;
+
+        p {
+            color: white;
+        };
     }
 }
 
