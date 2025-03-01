@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: #e23849;
-    --color-secondary: #ffffff;
+    --color-secondary: #4e4e4e;
     // --color-secondary: #ffe1ff;
     --color-main: #2c2c2f;
     --color-text: #ffffff;
@@ -62,7 +62,6 @@ header {
                 text-decoration: none;
                 color: var(--color-text);
                 font-weight: var(--font-weight-normal);
-                // border-radius: 5px;
                 transition: 0.3s ease-out;
             }
 
@@ -76,7 +75,7 @@ header {
             }
 
             #gh-link:hover {
-                background-color: var(--color-secondary);
+                background-color: var(--color-text);
 
                 img {
                     filter: invert(1);
@@ -95,7 +94,7 @@ header {
         padding-bottom: 35px;
         padding-top: 15px;
 
-        h2 {
+        h1 {
             font-size: var(--font-size-xxl);
             margin: 0;
         }
@@ -122,8 +121,6 @@ header {
         p {
             color: white;
         }
-
-        ;
     }
 }
 
@@ -148,13 +145,106 @@ header {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: var(--font-size-m);
-        color: var(--color-secondary);
+        color: var(--color-text);
         text-decoration: none;
         transition: 0.3s ease-out;
     }
 
     a:hover {
         color: var(--color-primary);
-        background-color: var(--color-secondary);
+        background-color: var(--color-text);
     }
 }
+
+.code-dark {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    color: white;
+    font-size: var(--font-size-m);
+    justify-content: space-around;
+
+    .description {
+        width: 40%;
+        line-height: 2.0;
+
+        h2 {
+            margin-top: 0px;
+            font-size: var(--font-size-xl);
+        }
+    }
+
+    img {
+        height: 100%;
+        border: 2px solid var(--color-secondary);
+        border-radius: 15px;
+    }
+
+    .pict {
+        height: 300px;
+    }
+}
+
+.code-light {
+    padding: 40px;
+    display: flex;
+    color: white;
+    font-size: var(--font-size-m);
+    background: linear-gradient(45deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+    justify-content: space-around;
+
+    .description {
+        width: 40%;
+        line-height:2;
+
+        h2 {
+            margin-top: 0px;
+            font-size: var(--font-size-xl);
+        }
+    }
+
+    img {
+        height: 100%;
+        border: 2px solid var(--color-text);
+        border-radius: 15px;
+    }
+
+    .pict {
+        height: 300px;
+    }
+}
+
+.wanna-buy-course {
+    padding: 35px;
+    padding-bottom: 0px;
+    background: linear-gradient(45deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+    text-align: center;
+    color: var(--color-text);
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+}
+
+.end {
+    padding: 35px;
+    background-color: var(--color-main);
+    text-align: center;
+    color: var(--color-text);
+}
+
+
+footer {
+    background: linear-gradient(45deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+    box-shadow: 0 -5px 10px rgb(38, 38, 38);
+    color: var(--color-text);
+    text-align: center;
+
+    h2 {
+        padding: 35px;
+        margin: 0;
+    }
+}
+
+
+// TODO: remake css when height is less then 700px
