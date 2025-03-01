@@ -7,87 +7,91 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="assets/icon.svg">
     <title>Course Makery</title>
-    </style>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <img src="assets/icon.svg" alt="w-logo">
-                Course Makery
+<body class="page">
+    <header class="header">
+        <nav class="header__nav">
+            <a href="/" class="header__logo">
+                <img class="header__logo-image" src="assets/icon.svg" alt="w-logo">
+                <span class="header__logo-text">Course Makery</span>
             </a>
-            <div class="nav-links">
-                <a href="#">About us</a>
-                <a href="#">Docs</a>
-                <a href="#">Go buy a course </a>
-                <a href="#">Funny pics</a>
-                <a href="#">Feedback</a>
-                <a id="gh-link" href="https://github.com/m1ss1onBest/my-web"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"
-                        alt="github_logo"></a>
+            <div class="header__menu">
+                <a class="header__menu-link" href="#">About us</a>
+                <a class="header__menu-link" href="#">Docs</a>
+                <a class="header__menu-link" href="#">Go buy a course</a>
+                <a class="header__menu-link" href="#">Funny pics</a>
+                <a class="header__menu-link" href="#">Feedback</a>
+                <a class="header__menu-link header__menu-link--icon" href="https://github.com/m1ss1onBest/my-web">
+                    <img class="header__menu-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github_logo">
+                </a>
             </div>
         </nav>
 
-        <div class="header-space centered">
-            <h1>Course Makery</h1>
-            <p>The best way to waste your money on useless paid IT-courses. Learn about how to tell everyone that you're
+        <div class="header__content">
+            <h1 class="header__title">Course Makery</h1>
+            <p class="header__subtitle">The best way to waste your money on useless paid IT-courses. Learn about how to tell everyone that you're
                 programmer when you're not.</p>
         </div>
-        <div class="buy-course-buttons">
-            <a id="link-button" href="https://accounts.binance.com/en/login?loginChannel=&return_to=">Go buy a course</a>
-        </div>
-        <p class="vacant-places">An infinite amount of vacant places!</p>
 
+        <div class="header__cta">
+            <a class="button button--primary" href="https://accounts.binance.com/en/login?loginChannel=&return_to=">
+                Go buy a course</a>
+        </div>
+
+        <p class="header__vacant">An infinite amount of vacant places!</p>
     </header>
-    <div class="code-dark">
-        <div class="description">
-            <h2>The Scam Master</h2>
-            <p>Become the smartest scammer in the world.<br><br>You will learn how to speak with a strong Indian
-                accent and convince people to buy your useless garbage.</p>
-        </div>
-        <div class="pict">
-            <img src="https://i.scdn.co/image/ab6775700000ee8567190dbd6150d6c1487e952c" alt="funny-picture">
-        </div>
-    </div>
 
-    <div class="code-light">
-        <div class="pict">
-            <img src="https://dac.digital/wp-content/uploads/2023/12/senior_software_developer-optimized.jpeg" alt="funny-picture">
+    <section class="course">
+        <div class="course__item course__item--dark">
+            <div class="course__description">
+                <h2 class="course__title">The Scam Master</h2>
+                <p class="course__text">Become the smartest scammer in the world.<br><br>You will learn how to speak with a strong Indian
+                    accent and convince people to buy your useless garbage.</p>
+            </div>
+            <div class="course__image">
+                <img src="https://i.scdn.co/image/ab6775700000ee8567190dbd6150d6c1487e952c" alt="funny-picture">
+            </div>
         </div>
 
-        <div class="description">
-            <h2>Zero to Hero</h2>
-            <p>Become a React Senior developer with 7+ years of experience in 5 months!<br><br>
-            You'll learn how to Google professionally and send prompts to ChatGPT at the senior developer level.</p>
+        <div class="course__item course__item--light">
+            <div class="course__image">
+                <img src="https://dac.digital/wp-content/uploads/2023/12/senior_software_developer-optimized.jpeg"
+                    alt="funny-picture">
+            </div>
+            <div class="course__description">
+                <h2 class="course__title">Zero To Hero</h2>
+                <p class="course__text">Become a React Senior developer with 7+ years of experience in 5 months!<br><br>
+                    You'll learn how to Google professionally and send prompts to ChatGPT at the senior developer level.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="code-dark">
-        <div class="description">
-            <h2>The Legacy Code Ambassador</h2>
-            <p>Unmaintainable code is not a bug but a feature! No obfuscation needed! <br><br>
-            You'll learn how to use all existing encryption methods to make your code secure and protected from everyone (even you).</p>
+        <div class="course__item course__item--dark">
+            <div class="course__description">
+                <h2 class="course__title">Legacy Code Ambassador</h2>
+                <p class="course__text">Unmaintainable code is not a bug but a feature! No obfuscation needed!<br><br>
+                    You'll learn how to use all existing encryption methods to make your code secure and protected from everyone (even you).</p>
+            </div>
+            <div class="course__image">
+                <img src="https://content.imageresizer.com/images/memes/Thomas-airplane-meme-meme-8.jpg"
+                    alt="funny-picture">
+            </div>
         </div>
-        <div class="pict">
-            <img src="https://content.imageresizer.com/images/memes/Thomas-airplane-meme-meme-8.jpg" alt="funny-picture">
-        </div>
-    </div>
+    </section>
 
-    <div class="wanna-buy-course">
-        <h2>Wanna buy a course now?</h2>
-        <div class="buy-course-buttons">
-            <a id="link" href="https://accounts.binance.com/en/login?loginChannel=&return_to=">Buy a course! Now!</a>
-        </div>
-    </div>
+    <section class="cta">
+        <h2 class="cta__title">Wanna buy a course now?</h2>
+        <a class="button button--primary" href="https://accounts.binance.com/en/login?loginChannel=&return_to=">Buy a
+            course! Now!</a>
+    </section>
 
     <div class="end">
-
-        <h2>sdfdf</h2>
+        
     </div>
 
-    <footer>
-        <h2>I had no idea what to put here but this is Footer.</h2>
+    <footer class="footer">
+        <h2 class="footer__text">I had no idea what to put here but this is Footer.</h2>
     </footer>
 </body>
 
