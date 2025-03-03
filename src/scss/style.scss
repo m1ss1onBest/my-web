@@ -171,7 +171,12 @@ body {
 }
 
 .end {
-    
+    text-align: center;
+
+    &__text {
+        color: var(--color-text);
+        padding: 25px;
+    }
 }
 
 .footer {
