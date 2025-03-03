@@ -1,2 +1,2 @@
 # my-web
-Just a lot of small web projects
+Just a HTML, SASS, NodeJS website.
