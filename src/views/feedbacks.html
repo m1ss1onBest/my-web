@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/feedbacks.css">
+    <title>Document</title>
+</head>
+
+<body class="page">
+    <header class="header">
+        <nav class="header__nav">
+            <a href="/" class="header__logo">
+                <img class="header__logo-image" src="assets/icon.svg" alt="w-logo">
+                <span class="header__logo-text">Course Makery</span>
+            </a>
+            <div class="header__menu">
+                <a class="header__menu-link" href="#">About us</a>
+                <a class="header__menu-link" href="#">Docs</a>
+                <a class="header__menu-link" href="#">Go buy a course</a>
+                <a class="header__menu-link" href="#">Funny pics</a>
+                <a class="header__menu-link" href="feedbacks">Feedback</a>
+                <a class="header__menu-link header__menu-link--icon" href="https://github.com/m1ss1onBest/my-web">
+                    <img class="header__menu-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github_logo">
+                </a>
+            </div>
+        </nav>
+
+        <div class="header__content">
+            <h1 class="header__title">Leave us a feedback!</h1>
+        </div>
+    </header>
+
+    <section class="feedback-form">
+        <form class="feedback-form__form">
+            <label class="form__label" for="username">Username: </label>
+            <input type="text" id="uname" name="uname" placeholder="your username"><br><br>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="your email"><br><br>
+            <label for=""></label><br>
+            <textarea class="form__textform" name="comment" id="comment" cols="30" rows="10"></textarea><br>
+            <button id="submit">Send feedback</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <h2 class="footer__text">I had no idea what to put here but this is Footer.</h2>
+    </footer>
+</body>
+
+</html>

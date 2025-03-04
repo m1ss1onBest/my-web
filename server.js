@@ -7,7 +7,7 @@ const PORT = 8300;
 
 app.use(express.static("public"))
 app.get("*", (req, res) => {
-    let filepath = "src/views" + (req.url === "/" ? "/index.html" : req.url);
+    let filepath = "src/views" + (req.url === "/" ? "/index.html" : req.url + ".html");
     fs.readFile(filepath, 'utf-8', (err, content) => {
         if(err) {
             res.status(404).send("Webpage not found.");
