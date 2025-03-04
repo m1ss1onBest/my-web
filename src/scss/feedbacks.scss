@@ -23,34 +23,29 @@
         flex-direction: column;
         padding: 30px;
         background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
-        padding: 30px;
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        max-width: 50%;
+        // max-width: 50%;
         width: 100%;
 
         label {
             color: var(--color-text);
             font-size: var(--font-size-m);
             margin-bottom: 5px;
-
         }
 
         input,
         textarea {
             padding: 10px;
-
             font-size: var(--font-size-m);
             border: 2px solid var(--color-secondary);
             border-radius: 8px;
             outline: none;
             background-color: #fff;
             color: #000;
-
         }
 
         textarea {
-
             resize: none;
             height: 120px;
         }
@@ -65,16 +60,27 @@
         border-radius: 8px;
         border: 2px solid var(--color-secondary);
         cursor: pointer;
-        transition: background 0.3s;
+        transition: background 0.3s ease-in-out;
     }
 
     button:hover {
-
-        background-color: var(--color-bg-gradient2);
+        background-color: transparent;
         color: var(--color-text);
-        border: 2px solid white
+        border: 2px solid white;
     }
+}
 
-
-
+.comments {
+    &__list {
+        padding: 0px;
+        list-style: none;
+        
+        li {
+            border-radius: 15px;
+            margin: 30px 30px;
+            padding: 10px 20px;
+            background-color: green;
+            background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+        }
+    }
 }

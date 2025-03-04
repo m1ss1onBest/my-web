@@ -4,3 +4,6 @@ package-lock.json
 
 # css
 public/styles/*
+
+# json files
+comments.json
