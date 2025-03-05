@@ -13,6 +13,9 @@
     --font-size-m: 17px;
 }
 
+body {
+}
+
 .feedback-form {
     margin: 30px;
     display: flex;
@@ -25,7 +28,7 @@
         background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        // max-width: 50%;
+        max-width: 50%;
         width: 100%;
 
         label {
@@ -79,8 +82,8 @@
             border-radius: 15px;
             margin: 30px 30px;
             padding: 10px 20px;
-            background-color: green;
-            background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+            // background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+            background-color: white;
         }
     }
 }

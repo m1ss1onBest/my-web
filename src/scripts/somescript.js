@@ -1,8 +1,16 @@
-//TODO: read json file
-const list = document.getElementById("comment-list");
-for (let i = 0; i < 5; i++) {
-    list.append(create_comment_element("Username", "Best website ever"));
-}
+fetch('comments.json')
+    .then(response => response.json())
+    .then(data => {
+        const usernames = data.map(user => user.username);
+        const messages = data.map(user => user.message)
+
+        // console.log(usernames);
+        // console.log(messages);
+        const list = document.getElementById("comment-list");
+        for (let i = 0; i < usernames.length; i++) {
+            list.append(create_comment_element(usernames[i], messages[i]));
+        }
+    });
 
 function create_comment_element(username, message) {
     const li = document.createElement("li");
