@@ -1,0 +1,89 @@
+:root {
+    --color-primary: #e23849;
+    --color-secondary: #4e4e4e;
+    --color-main: #2c2c2f;
+    --color-text: #ffffff;
+
+    --color-bg-gradient1: #e23b38;
+    --color-bg-gradient2: #e23865;
+
+    --font-size-xl: 30px;
+    --font-size-xxl: 40px;
+    --font-size-l: 25px;
+    --font-size-m: 17px;
+}
+
+body {
+}
+
+.feedback-form {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 50%;
+        width: 100%;
+
+        label {
+            color: var(--color-text);
+            font-size: var(--font-size-m);
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: var(--font-size-m);
+            border: 2px solid var(--color-secondary);
+            border-radius: 8px;
+            outline: none;
+            background-color: #fff;
+            color: #000;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+    }
+
+    button {
+        background-color: var(--color-text);
+        color: var(--color-primary);
+        font-size: var(--font-size-m);
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        border: 2px solid var(--color-secondary);
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: var(--color-text);
+        border: 2px solid white;
+    }
+}
+
+.comments {
+    &__list {
+        padding: 0px;
+        list-style: none;
+        
+        li {
+            border-radius: 15px;
+            margin: 30px 30px;
+            padding: 10px 20px;
+            // background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
+            background-color: white;
+        }
+    }
+}
