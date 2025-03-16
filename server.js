@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const IP    = "192.168.0.184";
+const IP    = "localhost";
 const PORT  = 8300;
 
 app.get("/comments.json", (req, res) => {
