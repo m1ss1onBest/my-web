@@ -3,8 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const IP    = "192.168.0.184";
-const PORT  = 8300;
+const PORT = 8300;
 
 app.get("/comments.json", (req, res) => {
     const filePath = path.join(__dirname, "public", "comments.json");
@@ -32,6 +31,6 @@ app.get("*", (req, res) => {
     });
 });
 
-app.listen(PORT, IP, () => {
-    console.log(`Server running at http://${IP}:${PORT}`);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
