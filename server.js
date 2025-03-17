@@ -6,6 +6,38 @@ const app = express();
 const IP    = "127.0.0.1";
 const PORT  = 8300;
 
+app.post("/add-comment", (req, res) => {
+    const filPath = path.join(__dirname, "public", "comments.json");
+
+    const { username, message, email } = req.body;
+    // TODO: should I check it twice?
+    if (!username || !message) {
+        return res.status(400).json({ error: "Username and message are required" });
+    }
+
+    fs.readFile(filePath, "utf-8", (err, data) => {
+        if (err) {
+            return res.status(500).json({ error: "Failed to read comments file" });
+        }
+
+        let comments = [];
+        try {
+            comments = JSON.parse(data);
+        } catch (e) {
+            console.error("Error parsing comments file:", e);
+            return res.status(500).json({ error: "Failed to parse comments file"});
+        }
+
+        comments.push({ username, message });
+        fs.writeFile(filPath, JSON.stringify(comments, null, 4), (err) => {
+            if (err) {
+                return res.status(500).json({ error: "Failed to write comments fifle" });
+            }
+            res.status(201).json({ success: true });
+        });
+    });
+});
+
 app.get("/comments.json", (req, res) => {
     const filePath = path.join(__dirname, "public", "comments.json");
 

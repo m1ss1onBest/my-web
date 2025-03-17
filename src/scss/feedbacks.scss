@@ -13,7 +13,6 @@
     --font-size-m: 17px;
 }
 
-
 .feedback-form {
     margin: 30px;
     display: flex;
@@ -26,8 +25,23 @@
         background: linear-gradient(135deg, var(--color-bg-gradient1), var(--color-bg-gradient2));
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        // max-width: 50%;
         width: 100%;
+
+        .form__input {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        @media (max-width: 670px) {
+            .form__input {
+                flex-direction: column;
+
+                input {
+                    width: 96%;
+                }
+            }
+        }
 
         label {
             color: var(--color-text);

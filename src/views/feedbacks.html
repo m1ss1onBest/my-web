@@ -21,9 +21,7 @@
                 <a class="header__menu-link" href="#">Go buy a course</a>
                 <a class="header__menu-link" href="#">Funny pics</a>
                 <a class="header__menu-link" href="feedbacks">Feedback</a>
-                <a class="header__menu-link header__menu-link--icon" href="https://github.com/m1ss1onBest/my-web">
-                    <img class="header__menu-icon"
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github_logo">
+                <a class="header__menu-link header__menu-link--icon" href="https://github.com/m1ss1onBest/my-web"> <img class="header__menu-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github_logo">
                 </a>
             </div>
         </nav>
@@ -35,12 +33,21 @@
 
     <section class="feedback-form">
         <form class="feedback-form__form">
-            <label class="form__label" for="username">Username: </label>
-            <input type="text" id="uname" name="uname" placeholder="your username"><br><br>
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" placeholder="your email"><br><br>
-            <label for=""></label><br>
-            <!-- <label for="comment">Leave your comment: </label> -->
+            <!-- container for input elements -->
+            <div class="form__input">
+                <!-- container for userame input -->
+                <div class="input-element">
+                    <label class="form__label" for="username">Username: </label>
+                    <input type="text" id="uname" name="uname" placeholder="your username"><br><br>
+                </div>
+                <!-- container for email input -->
+                <div class="input-element">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" placeholder="your email"><br><br>
+                </div>
+            </div>
+
+            <!-- comment area -->
             <textarea class="form__textform" name="comment" id="comment" cols="30" rows="10"></textarea><br>
             <button id="submit">Send feedback</button>
         </form>
@@ -60,6 +67,8 @@
     <footer class="footer">
         <h2 class="footer__text">I had no idea what to put here but this is Footer.</h2>
     </footer>
+
+    <script src="new_comment.js"></script>
 </body>
 
 </html>
