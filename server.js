@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const IP    = "127.0.0.1";
+const IP    = "192.168.43.197";
 const PORT  = 8300;
 
 app.post("/add-comment", (req, res) => {

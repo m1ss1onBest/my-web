@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/burger_menu.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
+    <title>About us</title>
 </head>
+
 <body>
-    <!-- TODO: -->
+    <header class="header">
+        <nav class="header__nav">
+            <a href="/" class="header__logo">
+                <img class="header__logo-image" src="assets/icon.svg" alt="w-logo">
+                <span class="header__logo-text">Course Makery</span>
+            </a>
+            <div class="header__menu">
+                <a class="header__menu-link" href="aboutus">About us</a>
+                <!-- <a class="header__menu-link" href="docs">Docs</a> -->
+                <a class="header__menu-link" href="https://accounts.binance.com/en/login?loginChannel=&return_to=">Go buy a course</a>
+                <a class="header__menu-link" href="funnypics">Funny pics</a>
+                <a class="header__menu-link" href="feedbacks">Feedback</a>
+                <a class="header__menu-link header__menu-link--icon" href="https://github.com/m1ss1onBest/my-web">
+                    <img class="header__menu-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github_logo">
+                </a>
+            </div>
+
+            <!-- burger menu -->
+            <button class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__menu-mobile">
+                <a class="header__menu-link header__menu-link--icon" href="aboutus">About us</a>
+                <!-- <a class="header__menu-link header__menu-link--icon" href="docs">Docs</a> -->
+                <a class="header__menu-link header__menu-link--icon" href="https://accounts.binance.com/en/login?loginChannel=&return_to=">Go buy a course</a>
+                <a class="header__menu-link header__menu-link--icon" href="funnypics">Funny pics</a>
+                <a class="header__menu-link header__menu-link--icon" href="feedbacks">Feedback</a>
+                <a class="header__menu-link header__menu-link--icon" href="https://github.com/m1ss1onBest/my-web">
+                    <img class="header__menu-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github_logo">
+                </a>
+            </div>
+        </nav>
+
+        <div class="header__content">
+            <h1 class="header__title">We are the best website ever!</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo accusamus sequi deleniti corporis eveniet numquam dolorem, ipsum iure doloribus optio facere hic est autem aliquid suscipit harum sunt alias praesentium.</p>
+        </div>
+    </header>
+
+    <section class="scammed">
+        <h2>Top 10 reasons to get scammed by us:</h2>
+        <p class="reason">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, earum repudiandae ratione blanditiis officiis dolor distinctio dolores quisquam, aut, vitae commodi? Tenetur iusto facilis eveniet provident nulla. Ratione, quia excepturi.</p>
+        <p class="reason">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, earum repudiandae ratione blanditiis officiis dolor distinctio dolores quisquam, aut, vitae commodi? .</p>
+        <p class="reason">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, earum repudiandae ratione blanditiis officiis dolor distinctio dolores quisquam, aut, vitae commodi? Tenetur iusto facilis eveniet provident nulla. Ratione, quia excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere natus aspernatur illum unde eius veritatis eos? Culpa dolores aliquam adipisci ad, eligendi ab commodi beatae provident quasi pariatur, hic nihil.</p>
+        <p class="reason">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, earum repudiandae ratione blanditiis officiis dolor distinctio dolores quisquam, aut, vitae commodi? Tenetur iusto facilis eveniet provident nulla. Ratione, quia excepturi.</p>
+    </section>
+
+    <footer class="footer">
+        <h2 class="footer__text">I had no idea what to put here but this is Footer.</h2>
+    </footer>
+
+    <script src="burger_menu.js"></script>
 </body>
 </html>
