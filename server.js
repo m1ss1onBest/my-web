@@ -7,35 +7,34 @@ const IP    = "127.0.0.1";
 const PORT  = 8300;
 
 app.post("/add-comment", (req, res) => {
-    const filPath = path.join(__dirname, "public", "comments.json");
+    // const filPath = path.join(__dirname, "public", "comments.json");
 
-    const { username, message, email } = req.body;
-    // TODO: should I check it twice?
-    if (!username || !message) {
-        return res.status(400).json({ error: "Username and message are required" });
-    }
+    // const { username, message, email } = req.body;
+    // // TODO: should I check it twice?
+    // if (!username || !message) {
+    //     return res.status(400).json({ error: "Username and message are required" });
+    // }
 
-    fs.readFile(filePath, "utf-8", (err, data) => {
-        if (err) {
-            return res.status(500).json({ error: "Failed to read comments file" });
-        }
+    // fs.readFile(filePath, "utf-8", (err, data) => {
+    //     if (err) {
+    //         return res.status(500).json({ error: "Failed to read comments file" });
+    //     }
 
-        let comments = [];
-        try {
-            comments = JSON.parse(data);
-        } catch (e) {
-            console.error("Error parsing comments file:", e);
-            return res.status(500).json({ error: "Failed to parse comments file"});
-        }
+    //     let comments = [];
+    //     try {
+    //         comments = JSON.parse(data);
+    //     } catch (e) {
+    //         console.error("Error parsing comments file:", e);
+    //         return res.status(500).json({ error: "Failed to parse comments file"});
+    //     }
 
-        comments.push({ username, message });
-        fs.writeFile(filPath, JSON.stringify(comments, null, 4), (err) => {
-            if (err) {
-                return res.status(500).json({ error: "Failed to write comments fifle" });
-            }
-            res.status(201).json({ success: true });
-        });
-    });
+    //     comments.push({ username, message });
+    //     fs.writeFile(filPath, JSON.stringify(comments, null, 4), (err) => {
+    //         if (err) {
+    //             return res.status(500).json({ error: "Failed to write comments fifle" });
+    //         }
+    //     });
+    // });
 });
 
 app.get("/comments.json", (req, res) => {
@@ -53,6 +52,11 @@ app.get("/comments.json", (req, res) => {
 
 app.use(express.static("public"))
 app.use(express.static("src/scripts"))
+
+app.get("/funnypics", (req, res) => {
+    res.redirect("https://http.cat");
+})
+
 app.get("*", (req, res) => {
     let filepath = "src/views" + (req.url === "/" ? "/index.html" : req.url + ".html");
     fs.readFile(filepath, 'utf-8', (err, content) => {
